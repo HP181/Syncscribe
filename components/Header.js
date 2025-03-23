@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { DollarSign, FileText, Mail, Menu, X } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,7 +12,8 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3 sm:py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          {/* <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text"> */}
+    
+          <Link href="/">
             <Image 
                 src="Logo.svg"
                 // layout='fill'
@@ -20,7 +22,7 @@ const Header = () => {
                 alt='Logo'
                 className='h-12 w-44 object-contain'
             />
-          {/* </h1> */}
+            </Link>
           
           {/* Mobile hamburger menu button */}
           <button 

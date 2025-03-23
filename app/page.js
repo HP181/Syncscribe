@@ -646,6 +646,7 @@ const generateServerPDF = async (results, meetingInfo) => {
     initial={{ opacity: 0, scale: 0.95 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ delay: 0.2 }}
+    className="cursor-pointer"
   >
     <AudioUploader 
       onUploadComplete={(data) => {
@@ -947,7 +948,7 @@ const generateServerPDF = async (results, meetingInfo) => {
                 <div className="flex gap-4">
                   <button
                     onClick={handleDownload}
-                    className="w-1/2 mt-6 bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-full font-semibold transition-opacity flex items-center justify-center gap-2"
+                    className="w-1/2 mt-6 bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-full font-semibold transition-opacity flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <Download className="w-5 h-5" />
                     Download Text
@@ -955,7 +956,7 @@ const generateServerPDF = async (results, meetingInfo) => {
 
                   <button
   onClick={() => generateServerPDF(results, meetingInfo)}
-  className="w-full mt-6 bg-gradient-to-r from-green-500 to-emerald-500 px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+  className="w-full mt-6 bg-gradient-to-r from-green-500 to-emerald-500 px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity flex items-center justify-center gap-2 cursor-pointer"
 >
   <Download className="w-5 h-5" />
   Download PDF
@@ -1094,7 +1095,7 @@ const generateServerPDF = async (results, meetingInfo) => {
                   Community support
                 </li>
               </ul>
-              <button className="w-full bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-full transition-colors">
+              <button className="w-full bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-full transition-colors cursor-pointer">
                 Get Started
               </button>
             </div>
@@ -1125,7 +1126,7 @@ const generateServerPDF = async (results, meetingInfo) => {
                   Custom exports
                 </li>
               </ul>
-              <button className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:opacity-90 px-6 py-3 rounded-full transition-opacity">
+              <button className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:opacity-90 px-6 py-3 rounded-full transition-opacity cursor-pointer">
                 Get Started
               </button>
             </div>
@@ -1151,7 +1152,7 @@ const generateServerPDF = async (results, meetingInfo) => {
                   SLA guarantee
                 </li>
               </ul>
-              <button className="w-full bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-full transition-colors">
+              <button className="w-full bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-full transition-colors cursor-pointer">
                 Contact Sales
               </button>
             </div>
