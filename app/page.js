@@ -28,7 +28,7 @@ import Header from "@/components/Header";
 
 // API base URL - change this based on your deployment
 const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:5000/api";
+  process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:5001/api";
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -996,7 +996,7 @@ const generateServerPDF = async (results, meetingInfo) => {
             </div>
             <h3 className="text-xl font-semibold mb-2">AI Summary</h3>
             <p className="text-gray-400">
-              Get concise summaries powered by Cohere's advanced language model.
+              Get concise summaries powered by Cohere&apos;s advanced language model.
             </p>
           </motion.div>
 
